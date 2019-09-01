@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+}
+#gridHolder{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.gridBox{
+    background-color: black;
+    width: 6.25%;
+    height: 6.25%;
+}
