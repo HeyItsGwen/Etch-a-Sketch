@@ -1,5 +1,9 @@
 let gridSize;
 
+const random = () => {
+
+};
+
 const reset = () =>{
     $('#gridHolder').empty();
 
@@ -19,16 +23,19 @@ const reset = () =>{
     $('.gridBox').css('width',gridString);
 
     $('.gridBox').on('mouseenter', () => {
-        event.target.style.backgroundColor = 'red';
+        let color = $('.pickAColor').val();
+
+        event.target.style.backgroundColor = color;
     })
 }
 
 for(let i=0; i < 256; i++){
     $('#gridHolder').append('<div class="gridBox"></div>');
-    console.log(i);
 }
  
 $('.gridBox').on('mouseenter', () => {
-    event.target.style.backgroundColor = 'red';
+    let color = $('.pickAColor').val();
+
+    event.target.style.backgroundColor = color;
 })
 

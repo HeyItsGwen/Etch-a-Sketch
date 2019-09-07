@@ -3,25 +3,48 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-image: url(images/background.jpg);
 }
 
-/*button*/
-#buttonSpan{
-    width: 100%;
-    margin-top: 1%;
+/*controls*/
+#controlBar{
+    max-width: 950px;
+    width: 55vw;
+    height: 5%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.resetButton, .pickAColor, .randomColors{
+    border-radius: 8px;
+    background-color: white;
+    margin: auto;
+}
+
+#pickAColorSpan{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /*grid stuff*/
 #gridHolder{
-    width: 65%;
-    height: 85%;
+    max-width: 950px;
+    width: 55vw;
+    max-height:950px;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 2% auto auto auto;
-    overflow: none;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .gridBox{

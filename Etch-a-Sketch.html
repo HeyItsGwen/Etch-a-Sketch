@@ -5,7 +5,14 @@
         <title>Etch-A-Sketch</title>
     </head>
     <body>
-        <span id='buttonSpan'><button class='resetButton' onclick='reset()'>Reset</button></span>
+        <div id='controlBar'>
+            <span id='resetButtonSpan'><button class='resetButton' onclick='reset()'>Reset</button></span>
+            <span id='pickAColorSpan'>
+                <label for='pickAColor'>Pick A Color</label><input class='pickAColor' type='color' value='#ff0000' onclick='colorSet()' title='pickAColor'></button>
+            </span>
+            <span id='randomColors'><button class='randomColors'>Random Colors</button></span>
+        
+        </div>
         <div id='gridHolder'>
 
         </div>
