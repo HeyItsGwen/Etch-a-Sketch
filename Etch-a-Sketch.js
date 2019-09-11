@@ -10,7 +10,7 @@ const reset = () =>{
     let num = window.prompt('How many pixels on each side of the grid?');
 
     gridSize = num * num;
-
+    
     let gridWidth = 100/num;
 
     let gridString = gridWidth + '%';
